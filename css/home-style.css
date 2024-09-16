@@ -1,0 +1,86 @@
+.home {
+  /* background-color: rgba(255, 228, 196, 0.1); */
+}
+
+.home section {
+  margin-bottom: 50px;
+}
+
+.profile {
+  width: 40vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  width: 60vw;
+  justify-content: center;
+}
+
+.intro h1 {
+  font-size: 45px;
+}
+
+.intro p {
+  font-size: large;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.my-photo {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid rgb(137, 137, 137);
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  border: 3px solid rgb(70, 70, 70);
+  padding: 10px 0px;
+  border-radius: 30px;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+}
+
+.download-cv {
+  width: 250px;
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.download-cv:hover {
+  background-color: violet;
+}
+
+.download-cv a {
+  color: black;
+  font-size: x-large;
+  font-weight: 1000;
+}
+
+.logo {
+  color: rgb(255, 255, 255);
+  margin-left: 30px;
+  transition: 0.3s;
+}
+
+.logo:hover {
+}
