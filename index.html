@@ -17,7 +17,12 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="/">VIRAJ DILSHAN</a>
+      <div class="logo">
+        <img src="/assets/images/home/profile.jpg" alt="profile-logo" /><a
+          href="#"
+          >VIRAJ DILSHAN</a
+        >
+      </div>
       <nav>
         <a href="#home">Home</a>
         <a href="#gallery">Gallery</a>
@@ -25,6 +30,17 @@
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
+      <div id="burger" class="burger-btn"></div>
+      <div id="menuPanel" class="menu-panel">
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="btnClose" class="btn-close"></button>
+      </div>
     </header>
     <main>
       <article id="home">
@@ -96,12 +112,12 @@
         <section>
           <h1>Projects</h1>
           <div>
-            <img
-              width="500px"
+            <!-- <img
+              width="auto"
               height="300px"
               src="./assets/images/project/project.png"
               alt=" gallery2"
-            />
+            /> -->
             <h4>Sales management system furniture shop (POS)</h4>
           </div>
         </section>
@@ -161,5 +177,6 @@
       <hr />
       <cite>-portfolio-</cite>
     </footer>
+    <script src="/js/menu.js"></script>
   </body>
 </html>

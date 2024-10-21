@@ -12,27 +12,35 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 550px) {
+  #home {
+    flex-direction: column-reverse;
+  }
+
   .profile {
-    height: 50%;
+    height: 50% !important;
     width: 100%;
   }
 
   .my-photo {
-    width: 250px;
-    height: 250px;
-    margin-bottom: 10px;
-    border: 3px solid rgb(49, 49, 49);
-    box-shadow: 0px 0px 20px rgb(80, 80, 80, 0.5);
+    width: 250px !important;
+    height: 250px !important;
+    border-radius: 100% !important;
+    margin-bottom: 10px !important;
+    border: 3px solid rgb(49, 49, 49) !important;
+    box-shadow: 0px 0px 20px rgb(80, 80, 80, 0.5) !important;
   }
 
   .intro {
-    height: 50%;
-    width: 100%;
-    align-items: center;
+    height: 50% !important;
+    width: 100% !important;
+    justify-content: start !important;
+    align-items: center !important;
+    text-align: center !important;
+    column-gap: 10px !important;
   }
 
   .intro h1 {
-    font-size: 2rem;
+    font-size: 2.5rem !important;
     margin: 0;
   }
 
