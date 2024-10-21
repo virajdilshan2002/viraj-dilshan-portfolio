@@ -1,5 +1,16 @@
-.gallery {
+#gallery {
 }
-.gallery img {
-  border-radius: 50%;
+
+.container {
+  position: relative;
+}
+
+.container img {
+  border-radius: 100%;
+}
+
+.slot-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
