@@ -1,6 +1,5 @@
 #home {
-  padding-top: 0px;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .profile {
@@ -9,44 +8,6 @@
   width: 40%;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (min-width: 0px) and (max-width: 550px) {
-  #home {
-    flex-direction: column-reverse;
-  }
-
-  .profile {
-    height: 50% !important;
-    width: 100%;
-  }
-
-  .my-photo {
-    width: 250px !important;
-    height: 250px !important;
-    border-radius: 100% !important;
-    margin-bottom: 10px !important;
-    border: 3px solid rgb(49, 49, 49) !important;
-    box-shadow: 0px 0px 20px rgb(80, 80, 80, 0.5) !important;
-  }
-
-  .intro {
-    height: 50% !important;
-    width: 100% !important;
-    justify-content: start !important;
-    align-items: center !important;
-    text-align: center !important;
-    column-gap: 10px !important;
-  }
-
-  .intro h1 {
-    font-size: 2.5rem !important;
-    margin: 0;
-  }
-
-  .intro p {
-    font-size: medium;
-  }
 }
 
 .intro {
@@ -95,7 +56,6 @@
   display: flex;
   justify-content: space-around;
   width: 50%;
-  /* border: 3px solid rgb(70, 70, 70); */
   background: rgba(32, 32, 32, 0.3);
   padding: 10px 10px;
   border-radius: 50px;
@@ -121,14 +81,120 @@
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .download-cv:hover {
-  background-color: violet;
+  background-color: rgb(28, 28, 28);
+  box-shadow: 0px 0px 10px rgb(255, 255, 255, 0.5);
+}
+
+.download-cv:hover a {
+  color: white;
 }
 
 .download-cv a {
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: x-large;
   font-weight: 1000;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  #home {
+    flex-direction: column-reverse !important;
+  }
+
+  .profile,
+  .intro {
+    height: 50% !important;
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  .social {
+    width: auto !important;
+    padding: 5px 5px !important;
+  }
+
+  .my-photo {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 100% !important;
+    margin-bottom: 10px !important;
+    border: 3px solid rgb(49, 49, 49) !important;
+    box-shadow: 0px 0px 20px rgb(80, 80, 80, 0.5) !important;
+  }
+
+  .intro {
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    column-gap: 10px !important;
+  }
+
+  .intro h1 {
+    font-size: 1.5rem !important;
+    margin: 0 !important;
+  }
+
+  .intro p {
+    font-size: small !important;
+  }
+
+  .download-cv {
+    width: 200px;
+    padding: 5px 10px;
+  }
+
+  .download-cv a {
+    font-size: medium;
+    font-weight: 800;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .my-photo {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 100% !important;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  #home {
+    flex-direction: column-reverse;
+  }
+
+  .profile {
+    height: 50% !important;
+    width: 100%;
+  }
+
+  .my-photo {
+    width: 220px !important;
+    height: 220px !important;
+    border-radius: 100% !important;
+    margin-bottom: 10px !important;
+    border: 3px solid rgb(49, 49, 49) !important;
+    box-shadow: 0px 0px 20px rgb(80, 80, 80, 0.5) !important;
+  }
+
+  .intro {
+    height: 50% !important;
+    width: 100% !important;
+    justify-content: start !important;
+    align-items: center !important;
+    text-align: center !important;
+    column-gap: 10px !important;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem !important;
+    margin: 0 !important;
+  }
+
+  .intro p {
+    font-size: medium !important;
+  }
 }

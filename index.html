@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viraj Dilshan</title>
     <link rel="shortcut icon" href="./assets/images/tab.png" />
-    <link rel="stylesheet" href="./css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="/css/home-style.css" />
     <link rel="stylesheet" href="/css/gallery-style.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
+    <link rel="stylesheet" href="/css/skills.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
   </head>
   <body>
     <header>
@@ -54,7 +58,7 @@
             leveraging technology to solve real-world problems.
           </p>
           <button class="download-cv" type="button">
-            <a href="https://www.google.com/">DOWNLOAD CV</a>
+            <a href="#">DOWNLOAD CV</a>
           </button>
         </section>
         <section class="profile">
@@ -76,56 +80,46 @@
         </section>
       </article>
       <article id="gallery">
-        <section>
-          <h1>Gallery</h1>
-          <div class="container">
-            <div class="slot-1">
-              <img
-                width="300px"
-                height="300px"
-                src="./assets/images/gallery/gallery1.png"
-                alt="gallery1"
-              />
-            </div>
-            <img
-              width="300px"
-              height="300px"
-              src="./assets/images/gallery/gallery4.jpg"
-              alt=" gallery2"
-            />
-            <img
-              width="300px"
-              height="300px"
-              src="./assets/images/gallery/gallery2.jpg"
-              alt=" gallery2"
-            />
-            <img
-              width="300px"
-              height="300px"
-              src="./assets/images/gallery/gallery5.jpg"
-              alt=" gallery2"
-            />
-          </div>
-        </section>
+        <h1>Gallery</h1>
+        <div class="container">
+          <img
+            src="./assets/images/gallery/gallery1.png"
+            alt="gallery1"
+            class="slot-1"
+          />
+          <img
+            src="./assets/images/gallery/gallery4.jpg"
+            alt=" gallery2"
+            class="slot-2"
+          />
+          <img
+            src="./assets/images/gallery/gallery2.jpg"
+            alt=" gallery2"
+            class="slot-3"
+          />
+          <img
+            src="./assets/images/gallery/gallery5.jpg"
+            alt=" gallery2"
+            class="slot-4"
+          />
+        </div>
       </article>
       <article class="projects" id="projects">
-        <section>
-          <h1>Projects</h1>
-          <div>
-            <!-- <img
-              width="auto"
-              height="300px"
-              src="./assets/images/project/project.png"
-              alt=" gallery2"
-            /> -->
-            <h4>Sales management system furniture shop (POS)</h4>
-          </div>
-        </section>
+        <h1>Projects</h1>
+        <div class="project">
+          <img
+            width="auto"
+            height="300px"
+            src="./assets/images/project/project.png"
+            alt=" gallery2"
+          />
+          <h4>Sales management system furniture shop (POS)</h4>
+        </div>
       </article>
-      <article class="skills" id="skills">
-        <section>
-          <h1>Skills</h1>
-          <div>
+      <article id="skills">
+        <h1>Skills</h1>
+        <section class="skills-content">
+          <div class="card">
             <h3>JAVA</h3>
             <p>
               Java is a widely-used programming language known for its platform
@@ -133,7 +127,7 @@
               of libraries and frameworks.
             </p>
           </div>
-          <div>
+          <div class="card">
             <h3>Mysql</h3>
             <p>
               MySQL is a popular open-source relational database management
@@ -141,7 +135,7 @@
               use.
             </p>
           </div>
-          <div>
+          <div class="card">
             <h3>Figma</h3>
             <p>
               Figma is a collaborative web-based tool for designing interfaces,
@@ -150,32 +144,34 @@
           </div>
         </section>
       </article>
-      <article class="contact" id="contact">
-        <section>
-          <h1>Contact</h1>
-          <div>
-            <fieldset>
-              <legend>Contact Me</legend>
-              <form>
-                <label for="name">Full Name* :</label>
-                <input type="text" id="name" placeholder="Enter your name" />
-                <label for="email">Email* :</label>
-                <input type="email" id="email" placeholder="Enter your email" />
-                <label for="message">Message* :</label>
-                <textarea
-                  id="message"
-                  placeholder="Enter your message"
-                ></textarea>
-                <button type="submit">Submit</button>
-              </form>
-            </fieldset>
-          </div>
-        </section>
+      <article id="contact">
+        <h1>Contact</h1>
+        <fieldset class="contact">
+          <legend>Contact Me</legend>
+          <form class="contact-form">
+            <div class="field">
+              <label for="name">Full Name* :</label>
+              <input type="text" id="name" placeholder="Enter your name" />
+            </div>
+            <div class="field">
+              <label for="email">Email* :</label>
+              <input type="email" id="email" placeholder="Enter your email" />
+            </div>
+            <div class="field">
+              <label for="message">Message* :</label>
+              <textarea
+                id="message"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+        </fieldset>
       </article>
     </main>
     <footer>
-      <hr />
-      <cite>-portfolio-</cite>
+      <cite>-viraj dilshan-</cite>
     </footer>
     <script src="/js/menu.js"></script>
   </body>

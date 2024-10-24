@@ -1,0 +1,79 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.contact {
+  height: calc(100% - 200px);
+  width: 90%;
+  border-radius: 20px;
+  border: 5px solid rgba(95, 95, 95, 0.5);
+}
+.contact > legend {
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form > button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.contact-form > button:hover {
+  background-color: rgb(44, 44, 44);
+}
+
+.field > label {
+  width: 150px;
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+.field > input,
+.field > textarea {
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px 15px;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  border: none;
+}
+
+.field > input {
+  height: 30px;
+}
+
+.field > textarea {
+  height: 100px;
+  resize: none;
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  column-gap: 20px;
+}
