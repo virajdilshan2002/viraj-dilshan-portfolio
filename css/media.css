@@ -1,35 +1,11 @@
-@media screen and (min-width: 0px) and (max-width: 768px) {
-  header > nav {
-    display: none;
-  }
-  .burger-btn {
-    display: block;
-  }
-  .profile-name {
-    display: none;
-  }
-  .menu-panel.active {
-    right: 0;
+@media screen and (min-width: 0px) and (max-width: 321px) {
+  article {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% - 20px);
+    height: 100vh !important;
   }
 
-  #home {
-    flex-direction: column-reverse !important;
-  }
-
-  .profile,
-  .intro {
-    height: 50% !important;
-    width: 100% !important;
-  }
-
-  .my-photo {
-    border-radius: 100% !important;
-    border: 3px solid rgb(49, 49, 49) !important;
-    box-shadow: 0px 0px 20px rgb(80, 80, 80, 0.5) !important;
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width: 320px) {
   .social {
     width: auto !important;
     padding: 5px 5px !important;
@@ -66,16 +42,119 @@
     font-size: medium;
     font-weight: 800;
   }
-}
 
-@media screen and (min-width: 320px) and (max-width: 375px) {
-  .my-photo {
-    width: 150px !important;
-    height: 150px !important;
+  .slot-1 {
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+  }
+  .slot-2 {
+    top: 22%;
+    left: 70%;
+    transform: translate(-50%, 50%);
+    width: 100px;
+    height: 100px;
+  }
+  .slot-3 {
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 180px;
+  }
+  .slot-4 {
+    bottom: 20%;
+    right: 10%;
+    transform: translateX(10%);
+    width: 120px;
+    height: 120px;
+  }
+
+  .project {
+    row-gap: 50px;
+  }
+
+  .project > img {
+    width: 300px;
+    height: 200px;
+    transform: rotate(90deg);
+  }
+
+  .project > h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .card {
+    padding: 20px 10px;
+    row-gap: 20px;
+    border-radius: 20px;
+    width: calc(100% - 50px);
+    height: auto;
+  }
+
+  .card > h3,
+  .card > p {
+    margin: 0;
+  }
+
+  .contact {
+    height: auto;
+    width: 100%;
+  }
+
+  .field {
+    flex-direction: column;
+    align-items: start;
+    width: 100% !important;
+    row-gap: 10px;
+  }
+
+  .field > label {
+    width: 150px;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .field > input,
+  .field > textarea {
+    width: calc(100% - 30px) !important;
+  }
+
+  .skills-content {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .contact {
+    padding: 10px;
+    border: none;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  legend {
+    display: none;
+  }
+
+  .contact-form > button {
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 425px) {
+@media screen and (min-width: 321px) and (max-width: 376px) {
+  article {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% - 20px);
+    height: 100vh;
+  }
+
   #home {
     flex-direction: column-reverse;
   }
@@ -101,16 +180,252 @@
   }
 
   .intro h1 {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
+    margin: 0 !important;
+  }
+
+  .intro p {
+    font-size: 0.9rem !important;
+  }
+
+  .download-cv {
+    width: 200px;
+    padding: 5px 10px;
+  }
+
+  .download-cv a {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+
+  .slot-1 {
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+  }
+  .slot-2 {
+    top: 15%;
+    left: 70%;
+    transform: translate(-50%, 50%);
+    width: 100px;
+    height: 100px;
+  }
+  .slot-3 {
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 210px;
+    height: 210px;
+  }
+  .slot-4 {
+    bottom: 20%;
+    right: 10%;
+    transform: translateX(10%);
+    width: 120px;
+    height: 120px;
+  }
+
+  .project > img {
+    width: 300px;
+    height: 150px;
+  }
+
+  .project > h4 {
+    font-size: 0.9rem;
+  }
+
+  .skills-content {
+    flex-direction: column;
+    row-gap: 20px !important;
+  }
+
+  .card {
+    padding: 20px 10px;
+    row-gap: 20px;
+    border-radius: 20px;
+    width: calc(100% - 40px);
+    height: 150px;
+  }
+
+  .contact {
+    padding: 10px;
+    border: none;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form > button {
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+
+  legend {
+    display: none;
+  }
+
+  .field {
+    flex-direction: column;
+    align-items: start;
+    width: 100% !important;
+    row-gap: 10px;
+  }
+
+  .field > label {
+    width: 150px;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .field > input,
+  .field > textarea {
+    width: calc(100% - 30px) !important;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 426px) {
+  article {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% - 20px);
+    height: 100vh;
+  }
+
+  #home {
+    flex-direction: column-reverse;
+  }
+
+  .profile {
+    height: 50% !important;
+    width: 100%;
+  }
+
+  .my-photo {
+    width: 220px !important;
+    height: 220px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .intro {
+    height: 50% !important;
+    width: 100% !important;
+    justify-content: start !important;
+    align-items: center !important;
+    text-align: center !important;
+    column-gap: 10px !important;
+  }
+
+  .intro h1 {
+    font-size: 2.3rem !important;
     margin: 0 !important;
   }
 
   .intro p {
     font-size: medium !important;
   }
+
+  .download-cv {
+    width: 200px;
+    padding: 5px 10px;
+  }
+
+  .download-cv a {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+
+  .slot-1 {
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+  }
+  .slot-2 {
+    top: 15%;
+    left: 70%;
+    transform: translate(-50%, 50%);
+    width: 100px;
+    height: 100px;
+  }
+  .slot-3 {
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50%);
+    width: 210px;
+    height: 210px;
+  }
+  .slot-4 {
+    bottom: 15%;
+    right: 10%;
+    transform: translateX(10%);
+    width: 120px;
+    height: 120px;
+  }
+
+  .project > img {
+    width: 370px;
+    height: 200px;
+  }
+
+  .project > h4 {
+    font-size: 0.9rem;
+  }
+
+  .skills-content {
+    flex-direction: column;
+    row-gap: 20px !important;
+  }
+
+  .card {
+    padding: 10px 5px;
+    row-gap: 10px;
+    border-radius: 20px;
+    width: calc(100% - 50px);
+    height: 150px;
+  }
+
+  .contact {
+    padding: 10px;
+    border: none;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form > button {
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+
+  legend {
+    display: none;
+  }
+
+  .field {
+    flex-direction: column;
+    align-items: start;
+    width: 100% !important;
+    row-gap: 10px;
+  }
+
+  .field > label {
+    width: 150px;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .field > input,
+  .field > textarea {
+    width: calc(100% - 30px) !important;
+  }
 }
 
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 769px) {
   .my-photo {
     width: 250px !important;
     height: 250px !important;
@@ -196,5 +511,91 @@
     width: 150px;
     height: 40px;
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 769px) {
+  header > nav {
+    display: none;
+  }
+  .burger-btn {
+    display: block;
+  }
+  .profile-name {
+    display: none;
+  }
+  .menu-panel.active {
+    right: 0;
+  }
+
+  #home {
+    flex-direction: column-reverse !important;
+  }
+
+  .profile,
+  .intro {
+    height: 50% !important;
+    width: 100% !important;
+  }
+
+  .my-photo {
+    border-radius: 100% !important;
+    border: 3px solid rgb(49, 49, 49) !important;
+    box-shadow: 0px 0px 20px rgb(80, 80, 80, 0.5) !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+  .slot-1 {
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+  }
+  .slot-2 {
+    top: 0;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 170px;
+    height: 170px;
+  }
+  .slot-3 {
+    bottom: 0;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+  }
+  .slot-4 {
+    bottom: 0;
+    right: 10%;
+    transform: translateX(10%);
+    width: 300px;
+    height: 300px;
+  }
+
+  .project > img {
+    width: 500px;
+    height: 300px;
+  }
+
+  .field {
+    width: 80%;
+  }
+
+  .field > label {
+    width: 200px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1441px) {
+  .field {
+    width: 80%;
+  }
+
+  .field > label {
+    width: 200px;
+    font-size: 1.2rem;
   }
 }

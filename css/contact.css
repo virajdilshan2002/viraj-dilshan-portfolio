@@ -46,14 +46,14 @@
 }
 
 .field > label {
-  width: 150px;
+  width: 200px;
   font-size: 1.3rem;
   text-align: right;
 }
 
 .field > input,
 .field > textarea {
-  width: 300px;
+  width: 100%;
   border-radius: 20px;
   padding: 10px 15px;
   background-color: rgb(27, 27, 27);
@@ -74,6 +74,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 80%;
   column-gap: 20px;
 }
